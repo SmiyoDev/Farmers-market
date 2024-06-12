@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#product-list, #cart-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-item, .cart-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    flex: 1 0 21%; /* 4 items per row */
+    box-sizing: border-box;
+}
+
+.product-item img, .cart-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-item h3, .cart-item h3 {
+    margin: 0 0 10px 0;
+}
+
+#upload-section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#uploadForm, #checkoutForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#uploadForm label, #checkoutForm label {
+    margin-top: 10px;
+}
+
+#uploadForm input, #uploadForm select, #uploadForm textarea, #checkoutForm select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#uploadForm button, #checkoutForm button, #checkoutButton {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#uploadForm button:hover, #checkoutForm button:hover, #checkoutButton:hover {
+    background-color: #45a049;
+}

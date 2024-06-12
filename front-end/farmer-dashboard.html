@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Farmer Dashboard</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="farmer-dashboard.html">Dashboard</a>
+            <a href="logout.html">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <section id="upload-section">
+            <h2>Upload Product</h2>
+            <form id="uploadForm">
+                <label for="name">Product Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="fruits">Fruits</option>
+                    <option value="vegetables">Vegetables</option>
+                    <option value="cereals">Cereals</option>
+                </select>
+
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="image_url">Image URL:</label>
+                <input type="url" id="image_url" name="image_url" required>
+
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Farmers Market</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
